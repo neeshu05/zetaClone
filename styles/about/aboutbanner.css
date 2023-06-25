@@ -1,0 +1,57 @@
+.about-banner {
+    background: url('https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FOurMission.13d85461.png&w=3840&q=100') ;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    color: white;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  
+  .banner-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .banner-content p {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content h3 {
+    text-align: center;
+  }
+  
+  .banner-padding {
+    padding-bottom: 12rem;
+  }
+  
+
+  @media (max-width: 480px) {
+        .about-banner {
+          padding-top: 1rem;
+          padding-bottom: 4rem;
+        }
+      
+        .banner-content h1 {
+          font-size: 28px;
+        }
+      
+        .banner-content p {
+          font-size: 18px;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+      
+        .banner-content h3 {
+          font-size: 20px;
+        }
+      
+        .banner-padding {
+          padding-bottom: 8rem;
+        }
+      }

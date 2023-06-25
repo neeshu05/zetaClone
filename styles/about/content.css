@@ -1,0 +1,54 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.content h2 {
+  color: black;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.image-container {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.image-container img {
+  width: auto;
+  height: 300px;
+}
+
+.content-heading{
+  color: black;
+  padding-top:50px;
+  font-size:50px;
+  font-weight:700;
+}
+
+/* Desktop Styles */
+@media (max-width: 480px) {
+  .content {
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  .content h2 {
+    font-size: 20px;
+    /* padding-bottom: 50px; */
+  }
+
+  .image-container {
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+  .image-container img {
+    width: 500%;
+    height: 500px;
+    
+  }
+}

@@ -1,0 +1,58 @@
+.footer {
+    background: rgba(0, 0, 0, 0.2) url('https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUs.085fb7a2.png&w=1920&q=100');
+    background-size: contain;
+    opacity: 0.8;
+    color: white;
+    margin-top: 0px;
+    width: auto;
+    padding: 0.5rem 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px; /* Adjust padding for mobile devices */
+    color: white;
+  }
+  
+  .footer-body {
+    display: flex;
+    flex-direction: row; /* Change flex direction for mobile devices */
+    justify-content: space-evenly;
+    color: white;
+    height: auto; /* Remove fixed height */
+  }
+  
+  .content {
+    font-size: 16px; /* Adjust font size for mobile devices */
+    line-height: 1.5rem; /* Adjust line height for mobile devices */
+    color: white;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      display: block; /* Show the footer on mobile devices */
+      padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+      color: white;
+    }
+  
+    .footer-content {
+      margin: 10px;
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  
+    .footer-body {
+      flex-direction: column;
+      justify-content: center; /* Center content vertically on mobile devices */
+      height: auto;
+    }
+  
+    .content {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      line-height: 1.2rem; /* Adjust line height for smaller screens */
+    }
+  }
+  

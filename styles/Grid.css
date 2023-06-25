@@ -1,0 +1,115 @@
+.grid {
+    width: auto;
+    margin-top: 50px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .grid_container {
+    background: linear-gradient(168deg, rgb(233, 244, 255) 0%, rgb(255, 255, 255) 100%);
+    padding: 20px;
+    position: relative;
+    font-family: Graphie, serif;
+  }
+  .card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+  }
+  
+  .grid_title {
+    margin: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .heading {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .non_heading {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgb(54, 55, 75);
+  }
+  
+  .grid_card {
+    width: auto;
+    padding: 0rem 1rem;
+  }
+  
+  .card_content {
+    position: relative;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    transition: transform 0.3s ease-in-out; /* Added transform transition */
+  }
+  
+  .card_content:hover {
+    transform: translateY(-5px); /* Apply a slight vertical translation on hover */
+  }
+  
+  .text_heading {
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .tex_decription {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .grid_container {
+      background: linear-gradient(168deg, rgb(233, 244, 255) 0%, rgb(255, 255, 255) 100%);
+      width: 100%;
+      padding: 20px;
+      position: relative;
+    }
+  
+    .grid_title {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      display: grid;
+      gap: 20px;
+      position: inherit;
+      grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .heading {
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .non-heading {
+      font-size: 16px;
+    }
+  }
+  
